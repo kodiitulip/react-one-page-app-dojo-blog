@@ -1,22 +1,15 @@
-const Article = () => {
+const Article = (title, author, body, key) => {
     return (
-        <div className="article">
+        <div className="article" key={key}>
             <div className="article__container">
                 <div className="article__title">
-                    <h1>Article Title</h1>
+                    <h1>{ title }</h1>
+                    <p className="article__author">By { author }</p>
                     <hr className="article__divider" />
                 </div>
                 <div className="article__body">
                     <div className="article__text">
-                        <h1>
-                            Lorem ipsum
-                        </h1>
-                        <h2>
-                            Lorem ipsum dolor
-                        </h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur qui ab illo praesentium maiores tenetur dolore vel reiciendis voluptate architecto possimus nostrum, non sint debitis dolor ut fugit. Harum, deserunt.
-                        </p>
+                        <p>{ body }</p>
                     </div>
                 </div>
             </div>
