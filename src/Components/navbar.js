@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar__container">
-                <a href="/" id="navbar__logo">The Dojo Blog</a>
+                <a href="/" id="navbar__logo"> <i className="fa-solid fa-shop"></i> The Dojo Blog</a>
                 <div onClick={handleClick} className="navbar__toggle" id="mobile-menu">
                     <span className="bar"></span>
                     <span className="bar"></span>
